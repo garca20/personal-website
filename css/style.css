@@ -27,7 +27,7 @@ nav>ul>li {
 nav>ul>li>a {
     /* border: 3px rgb(255, 255, 255) solid; */
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 6px 20px 6px 20px;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -50,10 +50,16 @@ main {
 }
 
 .products {
-    width: 400px;
-    height: 350px;
+    width: 95.23%;
+    height: 70%;
+    background-image: url(https://media.discordapp.net/attachments/1040024836409393192/1158175023610216488/clyde_sploinky.gif);
     background-color: #ad3333;
-    margin: 10px 0px 0px 10px;
+    margin: 2.4% 0px 0px 2.4%;
+}
+
+.products:hover {
+    transform: scale(1.01);
+    transition: all ease-in-out .8s;
 }
 
 .product_container > p {
