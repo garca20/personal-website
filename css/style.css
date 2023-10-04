@@ -7,18 +7,59 @@
 :root {
     /* PARA HTML */
     --hover: #3483fa;
+    --footnav: rgba(64, 64, 64, 1);
 }
 
 header {
     width: 100%;
-    height: 120px;
+    height: 100px;
     background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo_empresa {
+    width: 200px;
+    height: 70px;
+    margin-right: 800px;
+    background-image: url(https://www.jobatus.mx/noticias/pics/2023/02/como-puedo-saber-si-una-empresa-es-falsa.png);
+    background-size: cover;
+    background-position: center;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ui {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons {
+    margin-left: 35px;
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    background-position: center;
+}
+
+#phone {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Phone_font_awesome.svg/2048px-Phone_font_awesome.svg.png);
+}
+
+#email {
+    background-image: url(https://www.svgrepo.com/show/14478/email.svg);
+}
+
+#notifications {
+    background-image: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png);
 }
 
 nav {
     width: 100%;
     height: 70px;
-    background-color: rgba(64, 64, 64, 1);
+    background-color: var(--footnav);
 }
 
 nav>ul {
@@ -38,6 +79,8 @@ nav>ul>li>a {
     padding: 6px 20px 6px 20px;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
 }
 
 main {
@@ -68,7 +111,7 @@ main {
 }
 
 #product_1 {
-    background-image: url(https://www.tiendaepson.cr/media/catalog/product/cache/2b88132ea045bae0fc2b44a4f558f9b1/-/_/-_imagen_6-_as208eps44_2.png);
+    background-image: url(https://mediaserver.goepson.com/ImConvServlet/imconv/07422cccee656c55213360c1d3e948b79b974c7b/515Wx515H?use=productpictures&hybrisId=B2C&assetDescr=L3110_SPT_C11CG87301_384x286_prod_image);
     background-position: center;
     background-size: cover;
 }
@@ -80,7 +123,7 @@ main {
 }
 
 #product_3 {
-    background-image: url(https://www.tiendaepson.cr/media/catalog/product/cache/2b88132ea045bae0fc2b44a4f558f9b1/-/_/-_imagen_6-_as208eps44_2.png);
+    background-image: url(https://lagarza.com.co/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG0vIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--00a3062dc42f58b697f5e66180e05eceb84dad0b/IMG_20201231_113452.png?locale=es);
     background-position: center;
     background-size: cover;
 }
@@ -124,6 +167,7 @@ main {
 .kart {
     width: 50px;
     height: 50px;
+    margin: 25px 25px 0px 0px;
     background-image: url(https://cdn-icons-png.flaticon.com/256/3144/3144456.png);
     background-position: center;
     background-size: cover;
@@ -131,4 +175,6 @@ main {
 
 footer {
     width: 100%;
+    height: 200px;
+    background-color: var(--footnav);
 }
