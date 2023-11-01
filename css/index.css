@@ -1,0 +1,40 @@
+:root {
+    --a-color: rgb(52,131,250);
+    --hover-a-color: rgb(18, 89, 199);
+    --h1-color: rgb(103, 103, 103);
+    --h2-color: rgb(147, 147, 147);
+}
+
+#website_logo {
+    height: 50px;
+    width: 100px;
+    background-color: red;
+}
+
+nav {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--a-color);
+}
+
+a:hover {
+    color: var(--hover-a-color);
+}

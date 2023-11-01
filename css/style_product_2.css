@@ -7,7 +7,6 @@
 :root {
     /* PARA HTML */
     --hover: #3483fa;
-    --footnav: rgba(64, 64, 64, 1);
 }
 
 header {
@@ -59,7 +58,7 @@ header {
 nav {
     width: 100%;
     height: 70px;
-    background-color: var(--footnav);
+    background-color: rgba(64, 64, 64, 1);
 }
 
 nav>ul {
@@ -87,91 +86,121 @@ main {
     width: 100%;
     height: 584px;
     background-color: #fff;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.product_container {
-    width: 420px;
-    height: 500px;
-    border: 4px #fff solid;
-    border-radius: 5%;
+.product_area {
+    width: 69.8%;
+    height: 85.61643835616438%;
+    border: 1px rgba(0, 0, 0, 0) solid;
     background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
 }
 
-#product_1, #product_2, #product_3 {
-    width: 95.23%;
-    height: 70%;
-    background-color: #ffffff;
-    border: 4px #ffffff solid;
+.product_images {
+    width: 586px;
+    height: 470px;
+    background-color: white;
+    margin: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.images_column {
+    width: 102px;
+    height: 456px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 7.5px;
+}
+
+#product_showcase {
+    width: 430px;
+    height: 430px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#product_showcase_pic {
+    width: 402px;
+    height: 402px;
+    /* background-color: black; */
+    border: 4px rgba(0, 0, 0, 0) solid;
     border-radius: 5%;
-    margin: 1.5% 0px 0px 1.5%;
-}
-
-#product_1 {
-    background-image: url(https://mediaserver.goepson.com/ImConvServlet/imconv/07422cccee656c55213360c1d3e948b79b974c7b/515Wx515H?use=productpictures&hybrisId=B2C&assetDescr=L3110_SPT_C11CG87301_384x286_prod_image);
-    background-position: center;
-    background-size: cover;
-}
-
-#product_2 {
     background-image: url(https://www.tiendaepson.cr/media/catalog/product/cache/2b88132ea045bae0fc2b44a4f558f9b1/-/_/-_imagen_6-_as208eps44_2.png);
     background-position: center;
     background-size: cover;
 }
 
-#product_3 {
-    background-image: url(https://lagarza.com.co/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG0vIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--00a3062dc42f58b697f5e66180e05eceb84dad0b/IMG_20201231_113452.png?locale=es);
-    background-position: center;
-    background-size: cover;
-}
-
-/* .products:hover {
-    transform: scale(1.01);
-    transition: all ease-in-out .8s;
-} */
-
-.bottom_container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.name_of_product {
-    width: 300px;
-    margin: 10px 0px 0px 10px;
-    font-weight: 700;
-    font-size: 130%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.price {
-    width: 200px;
-    margin: 10px 0px 0px 10px;
-    font-weight: 750;
-    font-size: 180%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.product_container:hover {
-    height: 520px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+#product_showcase_pic:hover {
+    /* background-color: beige; */
     border: 4px var(--hover) solid;
-    border-radius: 5%;
+    cursor: pointer;
 }
 
-.kart {
-    width: 50px;
-    height: 50px;
-    margin: 25px 25px 0px 0px;
-    background-image: url(https://cdn-icons-png.flaticon.com/256/3144/3144456.png);
+#product_image_1, #product_image_2, #product_image_3, #product_image_4 {
+    width: 94px;
+    height: 94px;
+    background-color: black;
+    border: 4px black solid;
+    background-image: url(https://www.tiendaepson.cr/media/catalog/product/cache/2b88132ea045bae0fc2b44a4f558f9b1/-/_/-_imagen_6-_as208eps44_2.png);
     background-position: center;
     background-size: cover;
 }
 
-footer {
-    width: 100%;
-    height: 200px;
-    background-color: var(--footnav);
+#product_image_1:hover, #product_image_2:hover, #product_image_3:hover, #product_image_4:hover {
+    border: 4px var(--hover) solid;
+    cursor: pointer;
+    background-color: beige;
+    /* transition: all ease-in .8s; */
+}
+
+
+
+.product_info {
+    width: 382px;
+    height: 470px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 15px 0px 0px 22.5px;
+}
+
+.product_info > h1 {
+    margin-left: 15px;
+}
+
+.product_info > p {
+    width: 300px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.product_info > h2 {
+    width: 300px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.product_info > a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.product_info > a > h2 {
+    width: 300px;
+    height: 50px;
+    padding-top: 8px;
+    border-radius: 40px;
+    color: #fff;
+    background-color: var(--hover);
+    margin-left: 15px;
 }

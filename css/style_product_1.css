@@ -11,7 +11,7 @@
 
 header {
     width: 100%;
-    height: 120px;
+    height: 100px;
     background-color: yellow;
     display: flex;
     justify-content: space-around;
@@ -78,6 +78,8 @@ nav>ul>li>a {
     padding: 6px 20px 6px 20px;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
 }
 
 main {
@@ -92,8 +94,8 @@ main {
 .product_area {
     width: 69.8%;
     height: 85.61643835616438%;
-    border: 1px black solid;
-    background-color: aqua;
+    border: 1px rgba(0, 0, 0, 0) solid;
+    background-color: #d9d9d9;
     display: flex;
     justify-content: center;
 }
@@ -101,7 +103,7 @@ main {
 .product_images {
     width: 586px;
     height: 470px;
-    background-color: green;
+    background-color: white;
     margin: 15px 0px 0px 15px;
     display: flex;
     justify-content: center;
@@ -113,7 +115,6 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: red;
     margin: 7.5px;
 }
 
@@ -128,9 +129,9 @@ main {
     width: 402px;
     height: 402px;
     /* background-color: black; */
-    border: 4px black solid;
+    border: 4px rgba(0, 0, 0, 0) solid;
     border-radius: 5%;
-    background-image: url(https://media.discordapp.net/attachments/1040024836409393192/1158175023610216488/clyde_sploinky.gif);
+    background-image: url(https://mediaserver.goepson.com/ImConvServlet/imconv/07422cccee656c55213360c1d3e948b79b974c7b/515Wx515H?use=productpictures&hybrisId=B2C&assetDescr=L3110_SPT_C11CG87301_384x286_prod_image);
     background-position: center;
     background-size: cover;
 }
@@ -146,7 +147,7 @@ main {
     height: 94px;
     background-color: black;
     border: 4px black solid;
-    background-image: url(https://media.discordapp.net/attachments/1040024836409393192/1158175023610216488/clyde_sploinky.gif);
+    background-image: url(https://mediaserver.goepson.com/ImConvServlet/imconv/07422cccee656c55213360c1d3e948b79b974c7b/515Wx515H?use=productpictures&hybrisId=B2C&assetDescr=L3110_SPT_C11CG87301_384x286_prod_image);
     background-position: center;
     background-size: cover;
 }
@@ -163,7 +164,7 @@ main {
 .product_info {
     width: 382px;
     height: 470px;
-    background-color: green;
+    background-color: #d9d9d9;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -172,21 +173,18 @@ main {
 }
 
 .product_info > h1 {
-    background-color: beige;
     margin-left: 15px;
 }
 
 .product_info > p {
     width: 300px;
     height: auto;
-    background-color: beige;
     margin-left: 15px;
 }
 
 .product_info > h2 {
     width: 300px;
     height: auto;
-    background-color: beige;
     margin-left: 15px;
 }
 
@@ -200,6 +198,9 @@ main {
 .product_info > a > h2 {
     width: 300px;
     height: 50px;
-    background-color: cyan;
+    padding-top: 8px;
+    border-radius: 40px;
+    color: #fff;
+    background-color: var(--hover);
     margin-left: 15px;
 }
