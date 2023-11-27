@@ -1,0 +1,89 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80vh;
+}
+
+.product_general {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    width: 120%;
+    height: 100%;
+    border: 1px solid grey;
+    background-color: aqua;
+}
+
+#go_back_father {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    background-color: wheat;
+}
+
+.product_father {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+}
+
+.product_imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 60vh;
+    background-color: red;
+}
+
+.product_info {
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: red;
+    padding: 20px 0 0 20px;
+}
+
+.buy_section {
+    width: 60%;
+    background-color: red;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.buy_buttons {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}

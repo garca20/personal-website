@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto 1</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/product_gen.css">
+    <style>
+        #main_img {
+            background-image: url('../media/Monitor.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 220px;    
+            height: 220px;     
+        }
+        #sub_images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2vh;
+            width: 40vh;
+            height: 10vh;
+        }
+        #sub_img1, #sub_img2, #sub_img3, #sub_img4 {
+            background-image: url('../media/Monitor.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 50px;
+            height: 50px;           
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="container">
+        <div class="product_general">
+            <div id="go_back_father">
+                <p id="goback"><a href="../index.html">Inicio </a> < Tecnología < Televisiones</p>
+            </div>            
+            <div class="product_father">
+                <div class="product_imgs">
+                    <div id="main_img"></div>
+                    <div id="sub_images">
+                        <div id="sub_img1"></div>
+                        <div id="sub_img2"></div>
+                        <div id="sub_img3"></div>
+                        <div id="sub_img4"></div>
+                    </div>
+                </div>
+                <div class="product_info">
+                    Televisor Smart Tv Tcl
+                    <div id="description">
+                        <p>Características:</p>
+                        <ul>
+                            <li>
+                                <p>Google TV</p>
+                            </li>
+                            <li>
+                                <p>Usa tu voz y controla el TV</p>
+                            </li>
+                            <li>
+                                <p>HDR10</p>
+                            </li>
+                            <li>
+                                <p>Dolby AUDIO</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="buy_section">
+                        Complete el pago:
+                        <div class="buy_buttons">
+                            <input type="text" id="dinero" placeholder="Ingrese su efectivo">
+                            <input type="text" id="cupon" placeholder="Cupón (opcional)">
+                            <button disabled="true">Confirmar pago</button>
+                        </div>
+                        
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
