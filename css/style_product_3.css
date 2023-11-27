@@ -131,7 +131,7 @@ main {
     /* background-color: black; */
     border: 4px rgba(0, 0, 0, 0) solid;
     border-radius: 5%;
-    background-image: url(https://lagarza.com.co/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG0vIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--00a3062dc42f58b697f5e66180e05eceb84dad0b/IMG_20201231_113452.png?locale=es);
+    background-image: url('../media/Portatil.png');
     background-position: center;
     background-size: cover;
 }
@@ -147,7 +147,7 @@ main {
     height: 94px;
     background-color: black;
     border: 4px black solid;
-    background-image: url(https://lagarza.com.co/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG0vIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--00a3062dc42f58b697f5e66180e05eceb84dad0b/IMG_20201231_113452.png?locale=es);
+    background-image: url('../media/Portatil.png');
     background-position: center;
     background-size: cover;
 }
