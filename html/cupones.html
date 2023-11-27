@@ -15,25 +15,26 @@
             font-size: medium;
             font-weight: 400;
         }
-
         body {
             width: 200vh;
-            height: 200vh;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: rgb(28, 28, 28);
         }
-
         .container_cupones {
             padding: 10vh;
             display: flex;
             justify-content: left;
             align-items: flex-start;
             flex-direction: column;
-            gap: 10px;
+            gap: 30px;
             width: 200vh;
-            height: 200vh;
+            height: 100vh;
+        }
+        a {
+            text-decoration: none;
         }
         .container_box {
             display: flex;
@@ -43,11 +44,29 @@
             gap: 10vh;
         }
         .cupon {
-            width: 40vh;            
+            width: 40vh;
+            height: 26vh; 
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border: 1px solid grey;
+            gap: 2vh;      
         }
-        #resalta_cupon, #acerca_de {
-            border: 4px solid grey;
+        #resalta_cupon {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding: 2vh;
+        } 
+        #acerca_de {
+            display: flex;
+            justify-content: left;
+            height: 10vh;
+            padding: 2vh;
         }
+        
     </style>
 </head>
 <body>
@@ -72,6 +91,9 @@
                 <li id="acerca_de">Este cupón aplica 50% de descuento al producto seleccionado.</li>
             </div>
         </div>
+        <h4>Estos cupones NO son funcionales aún.</h4>
+        <h2><a href="../index.html">Regresar</a></h2>
     </div>
+    
 </body>
 </html>
