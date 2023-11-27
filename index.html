@@ -5,81 +5,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <nav>
 
-        <section id="website_logo">
-            Logo
-        </section>
 
+    <!-- Cabezado, color amarillo -->
+    <header>
+        <div id="left_side_header">
+            <div id="logo">Femmanf</div>
+            <div id="search_bar">
+                <input id="search" style="outline: none;" type="text" placeholder="Buscar un producto" autocomplete="off">
+                <img src="" alt="">
+            </div>            
+        </div>
+        <nav id="right_side_header">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img class="user_ui" style="outline: none;" src="media/letter.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="user_ui" style="outline: none;" src="media/cart.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="user_ui" style="outline: none;" src="media/user.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>   
+    </header>
+
+    <nav id="bottom_header">
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Redes sociales</a></li>
-        </ul>
-
+            <li>
+                <a class="ui_hrefs" href="#">
+                    Tienda
+                </a>
+            </li>
+            <li>
+                <a class="ui_hrefs" href="#">
+                    Ofertas
+                </a>
+            </li>
+            <li>
+                <a class="ui_hrefs" href="#">
+                    Cupones
+                </a>
+            </li>
+            <li>
+                <a class="ui_hrefs" href="#">
+                    Acerca de
+                </a>
+            </li>
+            <li>
+                <a class="ui_hrefs" href="https://github.com/garca20">
+                    Perfil Github
+                </a>
+            </li>
+        </ul>        
     </nav>
-    <!-- 230 x 367 -->
-    <!-- Sección Main -->
-    <main>
-        <section>
-            <!-- Sección sin usar aún -->
-        </section>
+    
 
-        <section class="offers">
-            <div id="offer1_box" class="offer_box">
-                <div id="offer_image1" class="offer_image">
+    <!-- <p id="events_text">Sección de eventos </p> -->
+    <section id="display_events">                
+        <div id="display_events_img"></div>
+    </section>
+    <!-- <p id="events_text">Vaya, parece que no hay eventos aún... </p> -->
 
+    <section id="discounts">
+        <h2 id="Ofertas">Ofertas del día:</h2>
+        <div class="container_discounts">
+            <div id="product_d_1" class="products_discounts" onclick="redirectTo('html/product1.html')">
+                <div class="discount_top" id="discount_image_1">                    
                 </div>
-                <div id="info_offer1" class="info_offer">
-                    <p id="offer1_name" class="offers_name"></p>
-                    <p id="old1_price" class="old_price"></p>
-                    <p id="offer1_price" class="offer_price"></p>
-                </div>
-            </div>
-            <div id="offer2_box" class="offer_box">
-                <div id="offer_image2" class="offer_image">
-
-                </div>
-                <div id="info_offer2" class="info_offer">
-                    <p id="offer2_name" class="offers_name"></p>
-                    <p id="old2_price" class="old_price"></p>
-                    <p id="offer2_price" class="offer_price"></p>
-                </div>
-            </div>
-            <div id="offer3_box" class="offer_box">
-                <div id="offer_image3" class="offer_image">
-
+                <div id="line"></div>
+                <div class="discount_bottom">
+                    <div class="discount_bottom_container">
+                        <span class="offer">OFERTA</span>
+                        <div class="prizes_section">
+                            <s class="original_prize">$ 1.600.000</s>
+                            <strong class="current_prize">$ 1.440.000 <span class="discount">10% Off</span></strong>
+                        </div>                        
+                        <p class="description" id="product_d_1">
+                            Televisor Smart Tv Tcl
+                        </p>      
+                    </div>                                  
                 </div>
             </div>
-            <div id="offer4_box" class="offer_box">
-                <div id="offer_image4" class="offer_image">
-
+            <div id="product_d_2" class="products_discounts">
+                <div class="discount_top" id="discount_image_2">                    
+                </div>
+                <div id="line"></div>
+                <div class="discount_bottom">
+                    <div class="discount_bottom_container">
+                        <span class="offer">OFERTA</span>
+                        <div class="prizes_section">
+                            <s class="original_prize">$ 2.000.000</s>
+                            <strong class="current_prize">$ 1.200.000 <span class="discount">40% Off</span></strong>
+                        </div>                        
+                        <p class="description" id="product_d_1">
+                            Epson L5590
+                        </p>      
+                    </div>                                  
                 </div>
             </div>
-        </section>
+            <div id="product_d_3" class="products_discounts">
+                <div class="discount_top" id="discount_image_3">                    
+                </div>
+                <div id="line"></div>
+                <div class="discount_bottom">
+                    <div class="discount_bottom_container">
+                        <span class="offer">OFERTA</span>
+                        <div class="prizes_section">
+                            <s class="original_prize">$ 5.000.000</s>
+                            <strong class="current_prize">$ 3.500.000 <span class="discount">30% Off</span></strong>
+                        </div>                        
+                        <p class="description" id="product_d_1">
+                            Portatil Gamer Acer N5
+                        </p>      
+                    </div>                                  
+                </div>
+            </div>
+            <div id="product_d_4" class="products_discounts">
+                <div class="discount_top" id="discount_image_4">                    
+                </div>
+                <div id="line"></div>
+                <div class="discount_bottom">
+                    <div class="discount_bottom_container">
+                        <span class="offer">OFERTA</span>
+                        <div class="prizes_section">
+                            <s class="original_prize">$ 70.000</s>
+                            <strong class="current_prize">$ 56.000 <span class="discount">20% Off</span></strong>
+                        </div>                        
+                        <p class="description" id="product_d_1">
+                            Headset Kotion G2000
+                        </p>      
+                    </div>                                  
+                </div>
+            </div>
+            <div id="product_d_5" class="products_discounts">
+                <div class="discount_top" id="discount_image_5">                    
+                </div>
+                <div id="line"></div>
+                <div class="discount_bottom">
+                    <div class="discount_bottom_container">
+                        <span class="offer">OFERTA</span>
+                        <div class="prizes_section">
+                            <s class="original_prize">$ 600.000</s>
+                            <strong class="current_prize">$ 480.000 <span class="discount">20% Off</span></strong>
+                        </div>                        
+                        <p class="description" id="product_d_1">
+                            Monitor curvo ASUS
+                        </p>      
+                    </div>                                  
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="products_display">
-            <div id="product1_box" class="product_box">
-                
-            </div>
-            <div id="product2_box" class="product_box">
-                
-            </div>
-            <div id="product3_box" class="product_box">
-
-            </div>
-        </section>
-    </main>
-    <!-- Enlaces a redes y otro poco de cosas -->
     <footer>
-        <section>
+        <section id="social_media">
+            <ul>
+                <li>
+                    <a href="" id="footer_media">
 
+                    </a>
+                </li>
+                <li>
+                    <a href="" id="footer_media">
+
+                    </a>
+                </li>
+                <li>
+                    <a href="" id="footer_media">
+
+                    </a>
+                </li>
+                <li>
+                    <a href="" id="footer_media">
+
+                    </a></l
+                    i>
+            </ul>
         </section>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
