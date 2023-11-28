@@ -11,7 +11,7 @@ function validarNumero(precio) {
         }
         else {
             var dineroRestante = (parseInt(dinero)-parseInt(precio))
-            document.getElementById("warning_text_1").innerText = "Validado, dinero restante: $"+dineroRestante
+            document.getElementById("warning_text_1").innerText = "Validado, dinero restante: $ "+dineroRestante
             document.getElementById("cupon").value = ""
         }
     }
@@ -25,8 +25,8 @@ function validarCupon(precio) {
     for (let posicion=0; posicion<listaCupones.length; posicion++) {
         if (listaCupones[posicion]==cupon) {
             let dinero = document.getElementById("numeroA").value
-            var dineroRestante = (parseInt(dinero)-(parseInt(precio)*listaCuponesEfectos[posicion]))
-            document.getElementById("warning_text_1").innerText = "Cupón aplicado, dinero restante: $"+dineroRestante
+            var dineroRestante = Math.round((parseInt(dinero)-(parseInt(precio)*listaCuponesEfectos[posicion])))
+            document.getElementById("warning_text_1").innerText = "Cupón aplicado, dinero restante: $ "+dineroRestante
         }
     }
 }
