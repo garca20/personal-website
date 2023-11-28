@@ -1,0 +1,33 @@
+footer {
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#footer_media {
+    filter: invert();
+}
+
+#redes:hover {
+    scale: 1.9;
+    transition: .2s all ease-in-out;
+}
+
+#lista_media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+#licence {
+    color: var(--main-white);
+    font-family: 'Roboto', sans-serif;
+}

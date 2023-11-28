@@ -1,22 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto 1</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/style_product_1.css">
+    <style>
+        #product_image_1, #product_image_2, #product_image_3, #product_image_4, #product_showcase_pic {
+            background-image: url('../media/Smart_tv_tcl.png');
+        }
+    </style>
 </head>
 <body>
-
-    <nav>
+    
+    <header>
+        <div id="left_side_header">
+            <div id="logo">Femmanf</div>
+            <div id="search_bar">
+                <input id="search" style="outline: none;" type="text" placeholder="Buscar un producto" autocomplete="off" onblur="alertar()">
+                <img src="" alt="">
+            </div>            
+        </div>
+        <nav id="right_side_header">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <img class="user_ui" style="outline: none;" src="../media/letter.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <img class="user_ui" style="outline: none;" src="../media/cart.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="user_ui" style="outline: none;" src="../media/user.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>   
+    </header>
+    <nav id="bottom_header">
         <ul>
-            <li><a href="../index.html">Inicio</a></li>
-        </ul>
+            <li>
+                <a class="ui_hrefs" href="../index.html">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a class="ui_hrefs" href="../html/cupones.html">
+                    Cupones
+                </a>
+            </li>
+            <!-- <li>
+                <a class="ui_hrefs" href="#">
+                    Acerca de
+                </a>
+            </li> -->
+            <li>
+                <a class="ui_hrefs" href="https://github.com/garca20">
+                    Perfil Github
+                </a>
+            </li>
+        </ul>        
     </nav>
 
-    <main>
-        <div class="product_area">
-            <div class="product_images">
+    <div class="contain_product_info_box">
+        <div class="product_info_box">
+            <div class="product_info_images">
                 <div class="images_column">
                     <div id="product_image_1"></div>
                     <div id="product_image_2"></div>
@@ -27,24 +82,58 @@
                     <div id="product_showcase_pic"></div>
                 </div>
             </div>
-            <div class="product_info">
+            <div class="product_info_description">
                 <h1>Televisor Smart Tv Tcl</h1>
                 <p>
-                    Televisor Smart Tv Tcl
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Nesciunt, incidunt
-                minima saepe ullam quo animi eveniet
-                in voluptates assumenda. Iure ab totam
-                eaque quidem possimus omnis illo eveniet
-                tenetur repellat quo! Atque magni ab sed
-                minima voluptatum voluptatem veniam assumenda?
+                Resolución 4K con más de mil colores disponibles, usa tu voz para hacer tus busquedas más rápido, con Youtube, HBO MAX, Netflix y otros servicios de Streaming.
                 </p>
-                <h2>$ 1.440.000</h2>
-                <a href="../index.html">
-                    <h2>Agregar al carrito</h2>
+                <h2>$ 1.440.000 </h2>
+
+                <label for="numeroA">Dinero disponible:</label>
+                <input id="numeroA" type="text" autocomplete="off" placeholder="Ingrese su dinero disponible." onblur="validarNumero(1440000)">
+                <div id="warning_text_1"></div>
+    
+                <label for="cupon">Cupón (Opcional):</label>
+                <input id="cupon" type="text" autocomplete="off" placeholder="Ingrese un cupón válido." onblur="validarCupon(1440000)">
+
+                <a id="buy" href="../index.html">
+                    <h2>Confirmar</h2>
                 </a>
             </div>
         </div>
-    </main>
+    </div>
+
+    <footer>
+        <section id="social_media">
+            <ul id="lista_media">
+                <li>
+                    <a href="#" id="footer_media">
+                        <img id="redes" src="../media/facebook.svg" alt="Facebook logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="footer_media">
+                        <img id="redes" src="../media/instagram.svg" alt="Instagram logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="footer_media">
+                        <img id="redes" src="../media/yt.svg" alt="Youtube logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/garca20" id="footer_media">
+                        <img id="redes" src="../media/github.svg" alt="Github logo">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="licence">
+            Andrés García © 2023 
+        </section>
+    </footer>
+
+    <script src="../js/manejoDeCupones.js"></script>
+
 </body>
 </html>

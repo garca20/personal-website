@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-<body>
+<body onload="bienvenido()">
 
 
     <!-- Cabezado, color amarillo -->
@@ -15,7 +17,7 @@
         <div id="left_side_header">
             <div id="logo">Femmanf</div>
             <div id="search_bar">
-                <input id="search" style="outline: none;" type="text" placeholder="Buscar un producto" autocomplete="off">
+                <input id="search" style="outline: none;" type="text" placeholder="Buscar un producto" autocomplete="off" onblur="alertar()">
                 <img src="" alt="">
             </div>            
         </div>
@@ -47,11 +49,11 @@
                     Cupones
                 </a>
             </li>
-            <li>
+            <!-- <li>
                 <a class="ui_hrefs" href="#">
                     Acerca de
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a class="ui_hrefs" href="https://github.com/garca20">
                     Perfil Github
@@ -187,7 +189,16 @@
             Andrés García © 2023 
         </section>
     </footer>
+    <script>
+        function alertar() {
+            alert("Producto no encontrado :(")
+            document.getElementById("search").value = ""
+        }
 
+        function bienvenido() {
+            console.log("La pagina ha cargado, ¡bienvenido!")
+        }
+    </script>
     <script src="js/index.js"></script>
 </body>
 </html>
